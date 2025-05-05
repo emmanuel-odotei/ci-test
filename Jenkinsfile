@@ -13,9 +13,6 @@ pipeline {
         }
 
         stage('Smoke Test') {
-            when {
-                branch 'staging'
-            }
             steps {
                 sh 'chmod +x ./scripts/smoke.sh'
                 sh './scripts/smoke.sh "$payroll_backend_staging_url"'
