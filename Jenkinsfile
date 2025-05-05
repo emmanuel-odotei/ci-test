@@ -4,11 +4,8 @@ pipeline {
     environment {
         payroll_backend_staging_url = credentials('payroll_backend_staging_url')
     }
-
+stages {
     stage('Smoke Test') {
-                when {
-                    branch 'staging'
-                }
                 steps {
                     withCredentials([string(credentialsId: 'payroll_backend_staging_url', variable: 'payroll_backend_staging_url')]) {
                         sh 'apt-get update'
@@ -24,7 +21,8 @@ pipeline {
                                    }
                              }
                }
-            }
+    }
+}
 
 //     stages {
 //         stage('Install dependencies') {
