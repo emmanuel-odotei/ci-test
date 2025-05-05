@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-05-05 14:18:09.249 UTC</timestamp>
+  <md5sum>9bd14e9a5a246fae8f57f5aec8ee5bcc</md5sum>
+  <fileName>Credential id=payroll_backend_staging_url name=payroll_backend_staging_url</fileName>
+  <usages>
+    <entry>
+      <string>smoke-test</string>
+      <ranges>1-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
