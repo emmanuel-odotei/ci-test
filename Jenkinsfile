@@ -10,7 +10,7 @@ stages {
                         sh 'apt-get update'
                         sh 'apt-get install jq -y'
                         sh 'chmod +x ./scripts/smoke.sh'
-                        sh './scripts/smoke.sh $payroll_backend_staging_url'
+                        sh './scripts/smoke.sh'
                 }
                 post {
                         failure {
